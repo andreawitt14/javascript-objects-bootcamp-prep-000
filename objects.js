@@ -2,4 +2,6 @@ var playlist = {FooFighters : "Walk", Drake : "Nice for What", TheDarkness : "I 
 
 function updatePlaylist(playlist, artist, song){
   
+  return Object.assign({},playlist, {[artist]: song})
+  
 }
